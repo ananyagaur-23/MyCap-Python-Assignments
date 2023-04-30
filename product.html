@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <style> 
+        body {
+      font-family: Arial Bold, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      font:bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+    
+    .logo img {
+      height: 50px;
+    }
+    
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    
+    nav li {
+      margin-left: 1rem;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    
+    form input {
+      display: block;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #281e1e;
+      border-radius: 0.25rem;
+      width: 100%;
+    }
+    
+    form button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 0.25rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    
+    footer {
+      background-color: #ccc;
+      position: fixed;
+      bottom: 0;
+      padding: 1rem;
+      width: 99%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+    
+    footer ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    
+    footer li {
+      margin-right: 1rem;
+    }
+    main {
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product-list {
+  list-style: none;
+  margin: fixed;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-list li {
+  width: 300px;
+  margin: 1rem;
+}
+
+.product {
+  position: relative;
+  color: #241f1f;
+  box-shadow: 0px 0px 10px #241f1f;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.product:hover {
+    color: #635959;
+  box-shadow: 0px 0px 20px #241f1f;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.product .category {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.product .description {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.product .details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  text-align: center;
+  display: none;
+  z-index: 1;
+}
+
+.product:hover .details {
+  display: block;
+}
+
+    </style>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="E-Commerce Website Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Products</h1>
+      <ul class="product-list">
+        <li>
+          <div class="product">
+            <img src="https://cdn.pixabay.com/photo/2015/10/03/20/47/piggy-bank-970340__340.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p class="category">Category 1</p>
+            <p class="description">This is a short description of Product 1.</p>
+            <div class="details">
+              <p>Price: $10.00</p>
+              <p>Rating: 4.5 stars</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product">
+            <img src="https://m.economictimes.com/thumb/msid-94286612,width-1200,height-900,resizemode-4,imgsize-42116/istock-1043657526-1.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p class="category">Category 2</p>
+            <p class="description">This is a short description of Product 2.</p>
+            <div class="details">
+              <p>Price: $20.00</p>
+              <p>Rating: 4.0 stars</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="product">
+            <img src="https://img.freepik.com/free-vector/gradient-stock-market-concept-with-statistics_23-2149157696.jpg" alt="Product 3">
+            <h2>Product 3</h2>
+            <p class="category">Category 1</p>
+            <p class="description">This is a short description of Product 3.</p>
+            <div class="details">
+              <p>Price: $30.00</p>
+              <p>Rating: 3.5 stars</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+      <p>&copy; 2023 E-Commerce Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
